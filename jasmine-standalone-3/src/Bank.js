@@ -1,6 +1,7 @@
 function Account(){
   this.balance = 0
   this.time = []
+  this.statements = null
 };
 
 Account.prototype.deposit = function(integer) {
@@ -29,10 +30,9 @@ Account.prototype.withdraw = function(integer) {
 
 Account.prototype.statement = function(){
   statement = []
-  console.log(this.time.join('  |:|  '))
   var i;
   for (i = 0; i < this.time.length; i++) {
-    statement.push(this.time[i].join(' - ') + (' ||'));
+    statement.push(this.time[i].join(' - ') + ("   |:|"));
   }
-  return statement.join(' ')
+  return statement.join("<br />")
 };
