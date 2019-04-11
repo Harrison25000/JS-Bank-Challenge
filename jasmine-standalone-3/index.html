@@ -9,21 +9,24 @@
     <script src="src/Bank.js"></script>
   </head>
   <!-- <h1 style='font-size: 150px'>HEY LUKE</h1> -->
-  <h1>Welcome to the BANK!</h1>
-  <body>
-    <div id="balance" style='font-size: 50px'></div>
+  <body style="background: url('https://vignette3.wikia.nocookie.net/fallout/images/c/cd/E3_Fallout4_VaultTecWorkshop_Door.png/revision/latest?cb=20160613084345')">
+  <h1 style='color:white'>Welcome to the BANK!</h1>
+    <p style='color:white; font-size:22px'>Your balance:
+    <div id="balance" style='color:white; font-size: 50px'></div>
+    </p>
+    <br><br>
     <form id="formDeposit" method="post" action="">
-    DEPOSIT! <input id="deposit" type=text value='depositing' style='height:15px; width:30%'><br>
+    <p style='color:white'>DEPOSIT:</p> <input id="deposit" type=text style='height:15px; width:30%'><br>
     <input type='submit'>
-  </form>
-    <button id="button"  style='height:150px; width: 150px' value='OR'>OR</button><br>
+  </form><br>
+    <button id="button"  style='font-size: 50px; height:150px; width: 150px' value='OR'>OR</button><br><br>
   <form id="formWithdraw" method="post" action="">
-    WITHDRAW! <input id='withdraw' style='height:15px; width:30%'><br>
+    <p style='color:white'>WITHDRAW:</p> <input id='withdraw' style='height:15px; width:30%'><br>
     <input type='submit'>
-  </form>
+  </form><br><br>
 
-    <button id="button1" style='font-size:15px'>button</button><br>
-    <div id="statement" style='font-size:30px'></div>
+    <button id="button1" style='font-size:15px'>Statement</button><br>
+    <div id="statement" style='color:white; font-size:30px'></div>
 
 
   </body>
