@@ -11,7 +11,7 @@ else {
   this.balance += integer
   var today = new Date();
   date = today.getDate().toString() + '.' + today.getMonth().toString() + '.' + today.getFullYear().toString()
-  this.time.push([date, 'deposited:', integer, 'balance:', this.balance])
+  this.time.push([date, 'Deposited:', integer, 'Balance:', this.balance])
      }
 };
 
@@ -24,7 +24,7 @@ Account.prototype.withdraw = function(integer) {
     this.balance -= integer
     var today = new Date();
     date = today.getDate().toString() + '.' + today.getMonth().toString() + '.' + today.getFullYear().toString()
-    this.time.push([date, 'withdrawn:', integer, 'balance:', this.balance])
+    this.time.push([date, 'Withdrawn:', integer, 'Balance:', this.balance])
   }
 };
 
@@ -32,7 +32,7 @@ Account.prototype.statement = function(){
   statement = []
   var i;
   for (i = 0; i < this.time.length; i++) {
-    statement.push(this.time[i].join(' - ') + ("   |:|"));
+    statement.push(this.time[i].join('  ') + ("   |:|"));
   }
   return statement.join("<br />")
 };
